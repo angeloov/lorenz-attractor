@@ -7,5 +7,5 @@ The Lorenz system is a system of ordinary differential equations first studied b
 
 ### Useful links
 
-[What is a differential equation?](https://www.myphysicslab.com/explain/what-is-a-diff-eq-en.html)
-[Dynamic Mathematics - Strange attactors](https://www.dynamicmath.xyz/strange-attractors/)
+- [What is a differential equation?](https://www.myphysicslab.com/explain/what-is-a-diff-eq-en.html)
+- [Dynamic Mathematics - Strange attactors](https://www.dynamicmath.xyz/strange-attractors/)
