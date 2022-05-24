@@ -19,9 +19,6 @@ void setup() {
 void draw() {
   background(0);
   
-  // a = abs(sin(theta)) * 10; 
-  // theta += 0.1;
-  
   float dx = (a * (y - x))*dt;
   float dy = (x * (b - z) - y)*dt;
   float dz = (x * y - c * z)*dt;
@@ -30,14 +27,12 @@ void draw() {
   y += dy;
   z += dz;
   
-  float s = sin(theta)*80;
-  theta += 0.1;
-
-  points.add(new PVector(x+s, y+s, z+s));
+  points.add(new PVector(x, y, z));
 
   translate(width/2, height/2, -width/2);
   scale(10);
   stroke(255);
+  strokeWeight(.6);
   noFill();
 
   float hue = 0;

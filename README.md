@@ -11,6 +11,7 @@ The Lorenz system is a system of ordinary differential equations first studied b
 
 ## Dadras attractor
 ![Dadras attractor](gifs/Dadras.gif)
+![Dadras attractor 2](gifs/Dadras2.gif)
 
 
 ### Useful links

@@ -2,41 +2,24 @@ import peasy.*;
 
 PeasyCam cam;
 
-float x = 0.01;
-float y = 0;
-float z = 0;
-
-float a = 10;
-float b = 28;
-float c = 10.0/3.0;
 float dt = 0.01;
-
-float theta = 0;
   
-LorenzAttractor attractor;
+DadrasAttractor attractor;
 ArrayList<Particle> particles;
 
 void addParticle() {
-  particles.add( new Particle(random(-width, width), random(-width, width), random(-width, width)) ); 
-}
-
-void removeParticles() {
-  for (int i = 0; i < 15; i++)
-    particles.remove(0); // Remove first
+  particles.add( new Particle(random(-5, 5), random(-5, 5), random(-5, 5)) ); 
 }
 
 void setup() {
   size(800, 600, P3D);
   
   cam = new PeasyCam(this, 100);
-  cam.setMinimumDistance(80);
+  cam.setMinimumDistance(10);
   cam.setMaximumDistance(1000);
   
-  attractor = new LorenzAttractor();
+  attractor = new DadrasAttractor();
   particles = new ArrayList<>();
-  
-  for (int i = 0; i < 5; i++)
-    addParticle(); 
 }
 
 void draw() {
@@ -44,7 +27,6 @@ void draw() {
 
   translate(0, 0, -100);
   scale(10);
-  stroke(255);
   strokeWeight(0.3);
   noFill();
   
@@ -52,11 +34,17 @@ void draw() {
 
   // Draw attractor
   colorMode(HSB);
+  float hue = 0;
 
   beginShape();
-
+  
   for (PVector v : attractor.points) {
+    stroke(hue, 255, 255);
     vertex(v.x, v.y, v.z);
+    
+    hue += 1;
+    if (hue > 255)
+      hue = 0;
   }
 
   endShape();
