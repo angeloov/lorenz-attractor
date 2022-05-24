@@ -5,6 +5,12 @@ The Lorenz system is a system of ordinary differential equations first studied b
 
 ![Lorenz system of equations](https://pbs.twimg.com/media/DhwfPLPW0AEwTFs.jpg)
 
+### Attractors
+
+Lorenz attractor
+![Lorenz attractor](gifs/Lorenz.gif)
+
+
 ### Useful links
 
 - [What is a differential equation?](https://www.myphysicslab.com/explain/what-is-a-diff-eq-en.html)
