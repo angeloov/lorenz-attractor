@@ -5,14 +5,12 @@ The Lorenz system is a system of ordinary differential equations first studied b
 
 ![Lorenz system of equations](https://pbs.twimg.com/media/DhwfPLPW0AEwTFs.jpg)
 
-
 ## Lorenz attractor
 ![Lorenz attractor](gifs/Lorenz.gif)
 
 ## Dadras attractor
 ![Dadras attractor](gifs/Dadras.gif)
 ![Dadras attractor 2](gifs/Dadras2.gif)
-
 
 ### Useful links
 
