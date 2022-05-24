@@ -4,7 +4,7 @@ float z = 0;
 
 float a = 10;
 float b = 28;
-float c = 9.0/3.0;
+float c = 10.0/3.0;
 float dt = 0.01;
 
 float theta = 0;
@@ -29,8 +29,11 @@ void draw() {
   x += dx;
   y += dy;
   z += dz;
+  
+  float s = sin(theta)*80;
+  theta += 0.1;
 
-  points.add(new PVector(x, y, z));
+  points.add(new PVector(x+s, y+s, z+s));
 
   translate(width/2, height/2, -width/2);
   scale(10);
@@ -49,5 +52,5 @@ void draw() {
   }
   endShape();
 
-  println(x, y, z);
+  println(x ,y ,z);
 }
